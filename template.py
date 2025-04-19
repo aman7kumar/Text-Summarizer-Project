@@ -3,10 +3,6 @@ from pathlib import Path
 import logging
 
 
-
-
-
-
 logging.basicConfig(level=logging.INFO,format='[%(asctime)s]: %(message)s:')
 
 project_name="textSummarizer"
@@ -51,9 +47,3 @@ for filepath in list_of_files:
         logging.info(f"{filename} is already exists")
         
 
-file_path = "README.md"
-
-if os.path.exists(file_path):
-    print(f"File size: {os.path.getsize(file_path)} bytes")
-else:
-    print("Error: File does not exist.")
