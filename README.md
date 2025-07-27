@@ -13,7 +13,7 @@ Workflows
 How to run?
 STEPS:
 
-Clone the repository
+## Clone the repository
 
 https://github.com/aman7kumar/End-to-end-Text-Summarization
 
@@ -41,14 +41,14 @@ AWS-CICD-Deployment-with-Github-Actions
 1. Login to AWS console.
 2. Create IAM user for deployment
 
-#with specific access
+# with specific access
 
 1. EC2 access : It is virtual machine
 
 2. ECR: Elastic Container registry to save your docker image in aws
 
 
-#Description: About the deployment
+# Description: About the deployment
 
 1. Build docker image of the source code
 
@@ -60,7 +60,7 @@ AWS-CICD-Deployment-with-Github-Actions
 
 5. Lauch your docker image in EC2
 
-#Policy:
+# Policy:
 
 1. AmazonEC2ContainerRegistryFullAccess
 
@@ -79,7 +79,7 @@ sudo apt-get update -y
 
 sudo apt-get upgrade
 
-#required
+# required
 
 curl -fsSL https://get.docker.com -o get-docker.sh
 
@@ -89,11 +89,11 @@ sudo usermod -aG docker ubuntu
 
 newgrp docker
 
-6. Configure EC2 as self-hosted runner:
+6. ## Configure EC2 as self-hosted runner:
 
 setting>actions>runner>new self hosted runner> choose os> then run command one by one
 
-7. Setup github secrets:
+7. ## Setup github secrets:
 
 AWS_ACCESS_KEY_ID=
 
